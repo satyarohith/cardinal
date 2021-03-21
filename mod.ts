@@ -3,16 +3,16 @@ interface Options {
   long: boolean;
 }
 
-/** Get cardinal direction for the provided degree (0-360).
+/** Get direction for the provided degree based on 16-point compass rose (0-360).
  *
- * @param degree the degree (0-360) to get cardinal direction for
+ * @param degree the degree (0-360) to get the direction for
  * ```ts
- * import { getCardinal } from "https://deno.land/x/cardinal/mod.ts";
- * console.log(getCardinal(125)); // "SE"
- * console.log(getCardinal(125, {long: true})); // "southeast"
+ * import { getDirection } from "https://deno.land/x/cardinal/mod.ts";
+ * console.log(getDirection(125)); // "SE"
+ * console.log(getDirection(125, {long: true})); // "southeast"
  * ```
  * */
-export function getCardinal(degree: number, options?: Options): string {
+export function getDirection(degree: number, options?: Options): string {
   if (degree < 0 || degree > 360) {
     throw new Error(`degree out of range: ${degree} (expected: 0-360)`);
   }

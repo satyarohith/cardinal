@@ -2,12 +2,12 @@
 
 ![ci](https://github.com/satyarohith/cardinal/actions/workflows/ci.yml/badge.svg)
 
-Get cardinal direction (16 directions) from degree.
+Get direction for the provided degree based on 16-point compass rose.
 
 ```ts
-import { getCardinal } from "https://deno.land/x/cardinal/mod.ts";
-console.log(getCardinal(135)); // SE
-console.log(getCardinal(135, { long: true })); // southeast
+import { getDirection } from "https://deno.land/x/cardinal/mod.ts";
+console.log(getDirection(135)); // SE
+console.log(getDirection(135, { long: true })); // southeast
 ```
 
 [MIT](LICENSE) License.
