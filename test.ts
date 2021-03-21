@@ -9,6 +9,8 @@ Deno.test("getCardinal()", () => {
   assertEquals(getCardinal(348.75), "N");
   assertEquals(getCardinal(134), "SE");
   assertEquals(getCardinal(45), "NE");
+  assertEquals(getCardinal(134, { long: true }), "southeast");
+  assertEquals(getCardinal(45, { long: true }), "northeast");
 });
 
 Deno.test("throw error if the provided degree is out of range", () => {
