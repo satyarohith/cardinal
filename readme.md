@@ -1,5 +1,7 @@
 # Cardinal
 
+![ci](https://github.com/satyarohith/cardinal/actions/workflows/ci.yml/badge.svg)
+
 Get cardinal direction (16 directions) from degree.
 
 ```ts
